@@ -1,70 +1,31 @@
-# Getting Started with Create React App
+## 👨‍💻 Friend-Pred 🤖
+---
+##### User-Friendly Sentence Prediction AI
+###### This project was done in part of KAIST AI599, `Special Topics in Machine Learning <AI for Law>`
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### DEMO
+https://user-images.githubusercontent.com/57248975/209426313-994d9444-70fa-407b-9ef4-e78ab8fa6cb9.mp4
 
-## Available Scripts
 
-In the project directory, you can run:
+-----
+---
+### What is this project about?
+This project aims to give a better experience to users for sentence-prediction AI, which is a rising trend among Legal Tech Companies. We sought to provide:
+1. **Free-input user form**, that would allow user to freely express one's circumstance and the AI model can thoroughly consider to make an accurate prediction.
+2. **Sentence Reason Generation**, to add explainability to the prediction result and help user understand what features have led to result.
+3. **What If...?**, users are also curious of "what would have happened if...?"  Therefore, we provide an intuitive way to manipulate diverse key features in input to produce various prediction results, which yet shows some consistency with the reason generated. 
 
-### `npm start`
+#### Models used:
+**Generation-Model**: Both sentence prediction & reason generation are produced in a **generative way**, which takes a baseline model of 'lbox-open', which is a GPT2 model further fine-tuned on korean legal documents.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+**NLI-Model**: To automatically detect users' input and accordingly help the process of ``3. What if...``, we utilize koelectra-base for this, and further fine-tune it on KLUE NLI dataset.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+#### Front-end:
+Front-end was done in `react`. Please refer to `src`.
+To start, simply type: `npm start
+#### Back-end:
+Back-end was done in `Flask`. Please refer to `back`.
 
-### `npm test`
+### Evaluation Result
+<img width="386" alt="image" src="https://user-images.githubusercontent.com/57248975/209426328-0c89a5fd-a776-419c-b5aa-ac48763aaa9c.png">
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
