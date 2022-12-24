@@ -29,3 +29,5 @@ Back-end was done in `Flask`. Please refer to `back`.
 ### Evaluation Result
 <img width="386" alt="image" src="https://user-images.githubusercontent.com/57248975/209426328-0c89a5fd-a776-419c-b5aa-ac48763aaa9c.png">
 
+#### How to train generation model?
+If you wish to train our generation model, make sure you replace setup.py in original ``lbox`` repo with the one given in ``temp.py``.
