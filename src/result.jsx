@@ -16,47 +16,6 @@ function Result() {
       });
     
       const inputs = [
-        {
-          id: 1,
-          name: "username",
-          type: "text",
-          placeholder: "Username",
-          errorMessage: "Username should be valid username.",
-          label:"Username"
-        },
-        {
-          id: 2,
-          name: "email",
-          type: "text",
-          placeholder: "Email",
-          errorMessage:"Email should be valid email.",
-          label:"Email"
-        },
-        {
-          id: 3,
-          name: "birthday",
-          type: "text",
-          placeholder: "Birthday",
-          errorMessage:"Email should be valid email.",
-          label:"Birthday"
-        },
-        {
-          id: 4,
-          name: "password",
-          type: "text",
-          placeholder: "Password",
-          errorMessage:"Email should be valid email.",
-          label:"Password"
-        },
-        {
-          id: 5,
-          name: "confirmPassword",
-          type: "text",
-          placeholder: "Confirm Password",
-          errorMessage:"Email should be valid email.",
-          label:"Confirm Password"
-        },
-        
       ]
     
   const [username, setUsername] = useState("");
@@ -175,18 +134,6 @@ function Result() {
           <span>{addResult["output"] ? addResult["output"].split('\n').map( (it, i) => <div key={'x'+i}>{it}<br/></div> ) : ""}</span>
         </div>
         
-{/* 
-        <div className="card">
-        1. 법률상 처단형의 범위: 징역 1월~5년 <br/>
-        2. 양형기준에 따른 권고형의 범위 <br/>  
-        [유형의 결정] 성범죄 > 01. 일반적 기준 > 나. 강제추행죄(13세 이상 대상) > [제1유형] 일반강제추행 <br/>
-        <span className="changed"> [특별양형인자] 감경요소: 처벌불원</span> <br/>
-        [권고영역 및 권고형의 범위] 감경영역, 징역 1월~6월 <br/>
-        3. 선고형의 결정 <br/>
-        아래의 정상 및 피고인의 나이, 성행, 환경, 범행의 동기 및 수단과 결과, 범행 후의 정황 등 기록과 이 사건 변론에 나타난 여러 가지 양형의 조건을 종합하여 주문과 같이 형을 정한다. <br/>
-        <span className="changed">○ 불리한 정상 : 피고인은 자신의 직원이던 피해자를 추행하였는바, 그 범행태양에 비추어 죄질이 나쁘다.</span><br/>
-        ○ 유리한 정상 : 피고인은 이 사건 범행을 인정하고 자신의 잘못을 뉘우치며 반성하고 있다. 피해자와 합의하였다. 피고인에게 동종 전력이나 벌금형을 초과하는 형사처벌 전력은 없다. <br/>
-        </div>  */}
         <button>Submit</button>
       </form>
     </div>
