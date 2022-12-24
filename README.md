@@ -4,13 +4,14 @@
 ###### This project was done in part of KAIST AI599, `Special Topics in Machine Learning <AI for Law>`
 
 ### DEMO
-https://user-images.githubusercontent.com/57248975/209426313-994d9444-70fa-407b-9ef4-e78ab8fa6cb9.mp4
+https://user-images.githubusercontent.com/57248975/209426512-a9c035e9-ad9e-446a-b9b1-513abd61a2a9.MP4
+
 
 
 -----
 ---
 ### What is this project about?
-This project aims to give a better experience to users for sentence-prediction AI, which is a rising trend among Legal Tech Companies. We sought to provide:
+> This project aims to give a better experience to users for sentence-prediction AI, which is a rising trend among Legal Tech Companies. We sought to provide:
 1. **Free-input user form**, that would allow user to freely express one's circumstance and the AI model can thoroughly consider to make an accurate prediction.
 2. **Sentence Reason Generation**, to add explainability to the prediction result and help user understand what features have led to result.
 3. **What If...?**, users are also curious of "what would have happened if...?"  Therefore, we provide an intuitive way to manipulate diverse key features in input to produce various prediction results, which yet shows some consistency with the reason generated. 
