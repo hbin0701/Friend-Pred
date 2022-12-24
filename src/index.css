@@ -1,11 +1,39 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@font-face {
+  font-family: 'Cafe24Oneprettynight';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.1/Cafe24Oneprettynight.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
 }
+
+body {
+  background-color: #97dece;
+  margin: 0;
+  margin-top: 80px;
+  margin-bottom: 80px;
+  font-family: 'Cafe24Oneprettynight' !important
+}
+
+input,
+textarea,
+select {
+  font-size: 18px;
+  font-family: 'Cafe24Oneprettynight';
+  font-weight: bold;
+}
+
+
+.flex-container {
+  display: flex;
+  justify-content: center;
+}
+
+.flex-item {
+  width: 5000px;
+  height: 100px;
+  background-color: darksalmon;
+}
+
+
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',

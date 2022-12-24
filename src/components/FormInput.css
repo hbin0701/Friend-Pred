@@ -1,0 +1,36 @@
+input,
+textarea {
+    line-height: 18px;
+    padding: 15px;
+    margin: 10px 0px;
+    width: 56 0px;
+    border-radius: 5px;
+    border: 1px solid gray;
+    justify-content: center;
+}
+
+select {
+    width: 200px;
+    padding: .8em .5em;
+    border: 1px solid #999;
+    font-family: inherit;
+    border-radius: 5px;
+    appearance: none;
+    margin-left: 30px;
+}
+
+input:invalid~span {
+    display: block
+}
+
+
+.formInput {
+    display: flex;
+    flex-direction: column;
+}
+
+.formInput>span {
+    font-size: 18px;
+    padding: 3px;
+    color: red;
+}
