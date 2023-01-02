@@ -1,5 +1,4 @@
-# Replace setup function in lbox_open/data_module/data_precedent.py with this code.
-# to replicate the model that we trained.
+# Replace setup function in lbox_open/data_module/data_precedent.py with this code to replicate the model that we trained.
 
 def setup(self, stage):
     if not self.use_local_data:
